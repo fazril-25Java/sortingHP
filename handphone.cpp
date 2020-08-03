@@ -52,7 +52,7 @@ void sortInfo(int nphones, Phones info[])
     {
       for(int j=0; j <(nphones-i-1);j++)
         {
-          if((info+j)->price>(info+i+1)->price){
+          if((info+j)>price&&(info+i+1)>price){
             temp = *(info+j);
             *(info+j) = *(info+j+1);
             *(info+j+1) = temp;
